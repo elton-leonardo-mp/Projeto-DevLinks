@@ -3,10 +3,10 @@ function toogleMode() {
   html.classList.toggle("light")
   const img = document.querySelector("#profile img")
   if (html.classList.contains("light")) {
-    img.setAttribute("src", "./assets/avatar-light.jpeg")
+    img.setAttribute("src", "./assets/avatar-light.png")
     img.setAttribute("alt", "foto do modo light do avatar")
   } else {
-    img.setAttribute("src", "./assets/avatar.jpeg")
+    img.setAttribute("src", "./assets/avatar.png")
     img.setAttribute("alt", "foto do modo escuro do avatar")
   }
 }
