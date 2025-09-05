@@ -1,8 +1,10 @@
+/*definições que valem para tudo*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/*configurção do modelo padrão */
 :root {
   --text-color: white;
   --bg-url: url(./assets/bg-mobile.jpg);
@@ -12,7 +14,7 @@
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/moon-stars.svg);
 }
-
+/*configuração de esilo do modo light*/
 .light {
   --text-color: black;
   --bg-url: url(./assets/bg-mobile-light.jpg);
@@ -71,10 +73,11 @@ body * {
   transform: translateY(-50%);
   animation: slide-back 0.2s;
 }
+/*Adicionando efeito hover (comportamento do elemento ao passar o mouse por cima )*/
 #switch button:hover {
   outline: 8px solid var(--highlight-color);
 }
-
+/*modo light do switch button*/
 .light #switch button {
   animation: slide-in 0.2s forwards;
 }
@@ -144,6 +147,7 @@ footer {
   padding: 24px 0;
   text-align: center;
 }
+/*aplicando media queries para adaptação de tela para diversos dispositivos  e tornando respansivo */
 @media (min-width: 700px) {
   :root {
     --bg-url: url(./assets/bg-desktop.jpg);
@@ -153,7 +157,7 @@ footer {
   }
 }
 
-/*animação*/
+/*animação do botão*/
 @keyframes slide-in {
   from {
     left: 0;
